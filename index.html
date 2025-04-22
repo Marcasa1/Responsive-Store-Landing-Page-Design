@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Store Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Custom styles for additional control */
+    .product-card:hover {
+      transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    .product-card{
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header Section -->
+  <header class="bg-white shadow-md py-4 px-6 sticky top-0 z-10">
+    <div class="flex justify-between items-center max-w-7xl mx-auto">
+      <h1 class="text-2xl font-bold">Responsive Store Landing Page Design</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#products" class="hover:text-blue-600">Products</a></li>
+          <li><a href="#about" class="hover:text-blue-600">About</a></li>
+          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Product Section -->
+  <section id="products" class="py-12 px-6 max-w-7xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-8 text-center">Featured Products</h2>
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+      <!-- Product Card 1 -->
+      <div class="bg-white rounded-xl shadow-md p-4 product-card">
+        <img src="product 1.jpg" alt="Mens shirt" class="w-full h-48 object-cover rounded-md" />
+        <h3 class="mt-4 text-lg font-bold">Product Name 1</h3>
+        <p class="text-sm text-gray-600">classic mens shirt KSH 1500.</p>
+        <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Shop Now</button>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="bg-white rounded-xl shadow-md p-4 product-card">
+        <img src="product 2.jpg" alt="Vitron" class="w-full h-48 object-cover rounded-md" />
+        <h3 class="mt-4 text-lg font-bold">Product Name 2</h3>
+        <p class="text-sm text-gray-600">Vitron HTC4388FS - 43" Smart Android Frameless TV - Black (1YR WRTY) KSH 21,000.</p>
+        <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Shop Now</button>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="bg-white rounded-xl shadow-md p-4 product-card">
+        <img src="product 3.jpg" alt="Poco C75" class="w-full h-48 object-cover rounded-md" />
+        <h3 class="mt-4 text-lg font-bold">Product Name 3</h3>
+        <p class="text-sm text-gray-600">Poco C75, 6.88", 128GB + 6GB RAM (Dual SIM), 5160mAh, Black (2YRs WRTY) KSH KSH 18000.</p>
+        <button class="mt-4 bg-blue-600 text-white py-2 px-29 rounded hover:bg-blue-700">Shop Now</button>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="bg-white rounded-xl shadow-md p-4 product-card">
+        <img src="product 4.jpg" alt="Denim Jeans" class="w-full h-48 object-cover rounded-md" />
+        <h3 class="mt-4 text-lg font-bold">Product Name 4</h3>
+        <p class="text-sm text-gray-600">Comfortable Slim Fit Jeans For Men - 3 Pack
+          KSh 4,700 - KSh 4,800
+          KSh 4,800 - KSh 5,000
+          4%</p>
+        <button class="mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Shop Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer id="contact" class="bg-white py-6 border-t">
+    <div class="text-center text-sm text-gray-500">
+      <p>&copy; 2025 Responsive Store Landing Page. All rights reserved.</p>
+      <p>Contact us: Responsive Store Landing Page Design</p>
+    </div>
+  </footer>
+
+</body>
+</html>
